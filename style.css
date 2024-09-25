@@ -1,0 +1,65 @@
+body {
+  background: -webkit-linear-gradient(bottom, #2dbd6e, #a6f77b);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0; /* Menghilangkan margin default */
+  font-family: Arial, sans-serif; /* Menambahkan font untuk tampilan yang lebih baik */
+}
+
+#cardbio {
+  border: 1px solid #169636;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: #D2FF72;
+  width: 90%; /* Mengubah lebar menjadi persentase */
+  max-width: 800px; /* Menetapkan lebar maksimum */
+  height: auto; /* Mengubah tinggi menjadi otomatis */
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+}
+
+.output-container {
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: #D2FF72;
+  width: 90%; /* Mengubah lebar menjadi persentase */
+  max-width: 800px; /* Menetapkan lebar maksimum */
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Media query untuk perangkat dengan lebar maksimum 600px */
+@media (max-width: 600px) {
+    .output-container {
+        padding: 15px; /* Mengurangi padding pada perangkat kecil */
+        margin: 5px; /* Mengurangi margin pada perangkat kecil */
+    }
+
+    .responsive-table th,
+    .responsive-table td {
+        padding: 5px; /* Mengurangi padding pada perangkat kecil */
+    }
+}
+
+/* Media query untuk perangkat dengan lebar maksimum 400px */
+@media (max-width: 400px) {
+    .output-container {
+        padding: 10px; /* Mengurangi padding lebih lanjut pada perangkat sangat kecil */
+    }
+
+    .responsive-table th,
+    .responsive-table td {
+        padding: 3px; /* Ukuran padding lebih kecil untuk perangkat sangat kecil */
+    }
+}
